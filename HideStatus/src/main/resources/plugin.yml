@@ -1,0 +1,29 @@
+name: HideStatus
+version: 1.1
+description: Hide login and logout status.
+author: xDeeKay
+main: net.dkcraft.hidestatus.Main
+commands:
+    login:
+        description: Broadcasts a fake login message to the server.
+        usage: /login
+        permission: hidestatus.login
+        permission-message: You do not have permission to do that.
+    logout:
+        description: Broadcasts a fake logout message to the server.
+        usage: /logout
+        permission: hidestatus.logout
+        permission-message: You do not have permission to do that.
+permissions:
+   hidestatus.hide:
+     description: Hides your login/logout status.
+   hidestatus.login:
+     description: Gives access to /login
+   hidestatus.logout:
+     description: Gives access to /logout
+   hidestatus.*:
+     description: Gives access to all HideStatus features.
+     children:
+       hidestatus.hide: true
+       hidestatus.login: true
+       hidestatus.logout: true

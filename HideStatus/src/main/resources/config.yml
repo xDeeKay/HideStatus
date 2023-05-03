@@ -1,0 +1,13 @@
+# ----------------------------------- #
+#       HideStatus Configuration      #
+# ----------------------------------- #
+#      Hide login/logout messages     #
+# ----------------------------------- #
+
+# Use the tag '&' for formatting codes.
+# Use the tag '%player%' to call the player name.
+
+# Fake login message broadcast to all players.
+fake-login: "&e%player% joined the game."
+# Fake logout message broadcast to all players.
+fake-logout: "&e%player% left the game."
